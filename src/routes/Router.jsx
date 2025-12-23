@@ -2,7 +2,7 @@
 
 import { createBrowserRouter } from 'react-router';
 import Root from '../layouts/Root';
-import Home from '../pages/Home';
+import Landing from '../pages/Landing';
 import Blog from '../pages/Blog';
 import BlogPost from '../pages/BlogPost';
 import Photos from '../pages/Photos';
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: <Landing />,
         index: true,
       },
       {
