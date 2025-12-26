@@ -24,7 +24,7 @@ const About = () => {
         </p>
         <a
           href='/#contact-me'
-          className='text-sm font-medium mr-2 bg-primary px-5 py-3 text-amber-50 hover:opacity-90'
+          className='text-sm font-medium mr-2 bg-primary px-5 py-3 text-amber-50 hover:bg-[#d94b2c]'
         >
           Hire Me
         </a>

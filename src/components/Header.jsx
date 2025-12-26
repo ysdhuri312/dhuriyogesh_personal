@@ -34,7 +34,7 @@ const Header = () => {
         </ul>
         <a
           href='/#contact'
-          className='text-sm mx-3 bg-primary px-3.5 py-2 text-amber-50 hover:opacity-90'
+          className='text-sm mx-3 bg-primary px-3.5 py-2 text-amber-50 hover:hover:bg-[#d94b2c]'
         >
           Let's Talk
         </a>

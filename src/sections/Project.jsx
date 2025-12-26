@@ -26,7 +26,7 @@ const Project = () => {
               <a
                 href='https://ysdhuri312.github.io/dhuriyogesh.github.io/'
                 alt='live-link'
-                className='text-sm mr-2 bg-primary px-3.5 py-1.5 text-amber-50 hover:opacity-90'
+                className='text-sm mr-2 bg-primary px-3.5 py-1.5 text-amber-50 hover:bg-[#d94b2c]'
                 target='_blank'
               >
                 Live
@@ -34,7 +34,7 @@ const Project = () => {
               <a
                 href='https://github.com/ysdhuri312/portfolio-app'
                 alt='github-link'
-                className='text-sm bg-primary px-3.5 py-1.5 text-amber-50 hover:opacity-90'
+                className='text-sm bg-primary px-3.5 py-1.5 text-amber-50 hover:bg-[#d94b2c]'
                 target='_blank'
               >
                 Github
