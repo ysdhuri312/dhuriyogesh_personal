@@ -18,11 +18,11 @@ const Project = () => {
           />
           <div className='m-2.5 h-auto flex flex-col justify-around'>
             <h4 className='mt-2.5 font-bold text-md'>Portfolio Website</h4>
-            <p className='mt-2.5 text-md'>
+            <p className='mt-2.5 text-sm'>
               My personal website - built with HTML, CSS, javascript and Deploy
               on GitHub Pages.
             </p>
-            <div className='mt-4'>
+            <div className='mt-4 mb-1'>
               <a
                 href='https://ysdhuri312.github.io/dhuriyogesh.github.io/'
                 alt='live-link'
@@ -49,13 +49,13 @@ const Project = () => {
           />
           <div className='m-2.5 h-auto flex flex-col justify-around'>
             <h4 className='mt-2 font-bold text-md'>Yelp Camp</h4>
-            <p className='mt-2 text-md'>
+            <p className='mt-2 text-sm'>
               A full-stack CRUD application to find nearest campground and if
               you login then can add campground with images and description. It
               build with Bootstrap, EJS, Express.js, MongoDB and deploy on
               Render.
             </p>
-            <div className='mt-4'>
+            <div className='mt-4 mb-1'>
               <a
                 href='https://yelp-camp-i3wi.onrender.com/'
                 alt='live-link'
@@ -82,13 +82,13 @@ const Project = () => {
           />
           <div className='m-2.5 h-auto flex flex-col justify-around'>
             <h4 className='mt-2 font-bold text-md'>Yelp Camp</h4>
-            <p className='mt-2 text-md'>
+            <p className='mt-2 text-sm'>
               A full-stack CRUD application to find nearest campground and if
               you login then can add campground with images and description. It
               build with Bootstrap, EJS, Express.js, MongoDB and deploy on
               Render.
             </p>
-            <div className='mt-4'>
+            <div className='mt-4 mb-1'>
               <a
                 href='https://yelp-camp-i3wi.onrender.com/'
                 alt='live-link'

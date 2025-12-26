@@ -57,7 +57,7 @@
     }
 
     .container {
-        @apply container mx-auto px-15
+        @apply container mx-auto px-25
     }
 
 }

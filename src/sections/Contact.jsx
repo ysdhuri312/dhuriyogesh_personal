@@ -61,7 +61,7 @@ const Contact = () => {
           </form>
         </div>
         <div className='p-5 border rounded-xs border-[#f5bcbc] flex-1 m-w-[500px] text-amber-50'>
-          <div className='p-3.5 rounded-xs mb-3.5 text-xl bg-primary'>
+          <div className='p-3.5 rounded-xs mb-3.5 text-md bg-primary'>
             <strong className='bg-primary'>GitHub</strong>
             <br />
             <a
@@ -72,11 +72,11 @@ const Contact = () => {
               https://github.com/yogesh-dhuri
             </a>
           </div>
-          <div className='p-3.5 rounded-xs mb-3.5 text-xl bg-primary'>
+          <div className='p-3.5 rounded-xs mb-3.5 text-md bg-primary'>
             <strong className='bg-primary'>LinkedIn</strong>
             <br />
             <a href='#' target='_blank' className='bg-primary'>
-              https://linkedin.com/yogesh-dhuri
+              http://www.linkedin.com/in/dhuriyogesh0312
             </a>
           </div>
           <div class='placeholder'></div>
