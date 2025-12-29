@@ -4,6 +4,7 @@ import cpp from './icons/cpp.png';
 import css3 from './icons/css3.png';
 import docker from './icons/docker.png';
 import express from './icons/express-js.png';
+import git from './icons/git.png';
 import github from './icons/github.png';
 import graphql from './icons/graphql.png';
 import html5 from './icons/html-5.png';
@@ -25,6 +26,7 @@ export const icons = {
   css3,
   docker,
   express,
+  git,
   github,
   graphql,
   html5,

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const Header = () => {
   return (
-    <header className='container flex justify-between items-center sticky top-0 z-10 border-b border-[rgba(0,0,0,0.1)] backdrop-blur-3xl shadow-lg'>
+    <header className='container py-2.5 flex justify-between items-center sticky top-0 z-10 border-b border-[rgba(0,0,0,0.1)] backdrop-blur-3xl shadow-lg'>
       <h1>
         <a
           href='#home'
@@ -14,7 +14,7 @@ const Header = () => {
           &#62;
         </a>
       </h1>
-      <nav className='flex items-center py-3'>
+      <nav className='flex items-center'>
         <ul className='flex'>
           <li className='px-3 hover:bg-primary hover:text-amber-50 ease-in-out duration-300'>
             <a href='/#home'>Home</a>

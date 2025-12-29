@@ -21,6 +21,8 @@ const Skills = () => {
         <img class='icon' src={icons.node} alt='node-js' />
         <img class='icon' src={icons.express} alt='express' />
         <img class='icon' src={icons.mongodb} alt='mongodb' />
+        <img class='icon' src={icons.git} alt='git' />
+        <img class='icon' src={icons.github} alt='github' />
         <img class='icon' src={icons.graphql} alt='graphql' />
         <img class='icon' src={icons.typescript} alt='typescript' />
         <img class='icon' src={icons.next} alt='nextjs' />

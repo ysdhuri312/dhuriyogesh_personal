@@ -7,7 +7,7 @@ const Contact = () => {
         Get In Touch
       </h2>
       <div className='flex justify-center gap-7 p-5'>
-        <div className='p-5 border rounded-xs border-[#f5bcbc] flex-1 m-w-[500px]'>
+        <div className='p-5 border rounded-xs border-[#f5bcbc] w-125 '>
           <form
             action='https://api.web3forms.com/submit'
             method='POST'
@@ -62,7 +62,7 @@ const Contact = () => {
             <div id='result'></div>
           </form>
         </div>
-        <div className='p-5 border rounded-xs border-[#f5bcbc] flex-1 m-w-[500px] text-amber-50'>
+        <div className='p-5 border rounded-xs border-[#f5bcbc] w-125 text-amber-50'>
           <div className='p-3.5 rounded-xs mb-3.5 text-md bg-primary'>
             <strong className='bg-primary font-heading'>GitHub</strong>
             <br />
