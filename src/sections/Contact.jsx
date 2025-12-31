@@ -19,7 +19,7 @@ const Contact = () => {
               value='cb2bd1ab-4a2a-4b30-ad1f-d1da81802f89'
             />
 
-            <label for='name' className='block font-medium mt-2.5 mb-2'>
+            <label htmlFor='name' className='block font-medium mt-2.5 mb-2'>
               Name
               <input
                 type='text'
@@ -29,7 +29,7 @@ const Contact = () => {
                 className='w-full p-2.5 rounded-xs border border-[#f5bcbc] outline-none mb-2.5 text-sm'
               />
             </label>
-            <label for='email' className='block font-medium mt-2.5 mb-2'>
+            <label htmlFor='email' className='block font-medium mt-2.5 mb-2'>
               Email
               <input
                 type='email'
@@ -43,7 +43,7 @@ const Contact = () => {
             {/* <label for="subject">Subject</label>
                   <input type="text" id="subject" placeholder="" /> */}
 
-            <label for='message' className='block font-medium mt-2.5 mb-2'>
+            <label htmlFor='message' className='block font-medium mt-2.5 mb-2'>
               Message
               <textarea
                 id='message'
@@ -81,8 +81,8 @@ const Contact = () => {
               http://www.linkedin.com/in/dhuriyogesh0312
             </a>
           </div>
-          <div class='placeholder'></div>
-          <div class='placeholder'></div>
+          <div className='placeholder'></div>
+          <div className='placeholder'></div>
         </div>
       </div>
     </section>
