@@ -3,7 +3,7 @@
 import { createBrowserRouter } from 'react-router';
 import Root from '../layouts/Root';
 import Landing from '../pages/Landing';
-import Blog from '../pages/Blog';
+import BlogList from '../pages/BlogList';
 import BlogPost from '../pages/BlogPost';
 import Photos from '../pages/Photos';
 import NotFound from '../components/NotFound';
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/blog',
-        element: <Blog />,
+        element: <BlogList />,
       },
       {
         path: '/blog/:slug',

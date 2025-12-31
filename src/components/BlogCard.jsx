@@ -2,7 +2,7 @@
 
 import placeholder from '../assets/icons/placeholder-image.png';
 
-const ProjectCard = () => {
+const BlogCard = () => {
   return (
     <article className='border border-[#E1B6B6] bg-[#D9D9D93a] my-4 flex'>
       <figure>
@@ -33,4 +33,4 @@ const ProjectCard = () => {
     </article>
   );
 };
-export default ProjectCard;
+export default BlogCard;

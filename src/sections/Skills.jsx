@@ -16,7 +16,7 @@ const Skills = () => {
         {technologies.map((technologie, index) => {
           return (
             <img
-              class='icon'
+              className='icon'
               src={technologie.icon}
               alt={technologie.name}
               key={index}
