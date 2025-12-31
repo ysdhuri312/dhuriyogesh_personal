@@ -1,6 +1,7 @@
 /** @format */
 import bootstrap from './icons/bootstrap.png';
 import cpp from './icons/cpp.png';
+import c from './icons/c.png';
 import css3 from './icons/css3.png';
 import docker from './icons/docker.png';
 import express from './icons/express-js.png';
@@ -19,6 +20,8 @@ import react from './icons/react.png';
 import sass from './icons/sass.png';
 import tailwind from './icons/tailwindcss.png';
 import typescript from './icons/typescript.png';
+import figma from '../assets/icons/figma.png';
+import redux from '../assets/icons/redux.png';
 
 import homeHero from '../assets/img/hero-1.png';
 import aboutHero from '../assets/img/hero-2.png';
@@ -49,6 +52,9 @@ export {
   sass,
   tailwind,
   typescript,
+  figma,
+  redux,
+  c,
   homeHero,
   aboutHero,
   resume,

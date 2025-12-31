@@ -1,6 +1,7 @@
 /** @format */
 
-import { icons } from '../assets';
+// import { icons } from '../assets';
+import { technologies } from '../constants';
 
 const Skills = () => {
   return (
@@ -12,6 +13,18 @@ const Skills = () => {
         I&#39;m Specialized In
       </h3>
       <div className='flex justify-start flex-wrap w-4/5'>
+        {technologies.map((technologie, index) => {
+          return (
+            <img
+              class='icon'
+              src={technologie.icon}
+              alt={technologie.name}
+              key={index}
+            />
+          );
+        })}
+      </div>
+      {/* <div className='flex justify-start flex-wrap w-4/5'>
         <img class='icon' src={icons.html5} alt='html5' />
         <img class='icon' src={icons.css3} alt='css3' />
         <img class='icon' src={icons.javascript} alt='javascript' />
@@ -39,7 +52,7 @@ const Skills = () => {
         <img class='icon' src={icons.next} alt='nextjs' />
         <img class='icon' src={icons.node} alt='node-js' />
         <img class='icon' src={icons.express} alt='express' />
-      </div>
+      </div> */}
     </section>
   );
 };
