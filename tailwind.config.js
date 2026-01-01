@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Open Sans', 'system-ui', 'sans-serif'],
-        heading: 'Montserrat',
+        heading: 'Opan Sans ExtraBold',
         logo: 'Waltograph',
       },
       colors: {

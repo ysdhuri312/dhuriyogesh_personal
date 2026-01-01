@@ -7,8 +7,8 @@
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url(./assets/fonts/Montserrat.ttf) format('truetype');
+    font-family: 'Opan Sans ExtraBold';
+    src: url(./assets/fonts/OpenSans_ExtraBold.ttf) format('truetype');
     font-display: swap;
 }
 
@@ -24,7 +24,7 @@
     --color-white-900: #fff2f2;
     --color-primary: #EB6440;
     --font-body: 'Open Sans';
-    --font-heading: 'Montserrat';
+    --font-heading: 'Opan Sans ExtraBold';
     --font-logo: 'Waltograph';
 }
 

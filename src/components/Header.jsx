@@ -8,7 +8,7 @@ const Header = () => {
       <h1>
         <a
           href='#home'
-          className='text-3xl font-black font-logo tracking-wider'
+          className='text-2xl font-black font-logo tracking-wider'
         >
           &#60; Yogesh.Dev <span className='text-2xl text-primary'>&#47; </span>
           &#62;
