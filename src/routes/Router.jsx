@@ -22,18 +22,18 @@ const router = createBrowserRouter([
         element: <BlogList />,
       },
       {
-        path: '/blog/:slug',
+        path: '/blog/:id',
         element: <BlogPost />,
       },
       {
         path: '/photos',
         element: <Photos />,
       },
+      {
+        path: '*',
+        element: <NotFound />,
+      },
     ],
-  },
-  {
-    path: '*',
-    element: <NotFound />,
   },
 ]);
 

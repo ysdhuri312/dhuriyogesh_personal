@@ -1,92 +1,70 @@
 /** @format */
 
-import image from '../assets/img/sample-blog.png';
+import { useParams } from 'react-router';
+import { getAllBlogs } from '../blogs/blogService.js';
+import MarkdownRender from '../blogs/MarkdownRender.jsx';
 
 const BlogPost = () => {
+  const blogs = getAllBlogs();
+  const { id } = useParams();
+  const blog = blogs.find((blog) => blog.slug == id);
+  const { title, slug, date, readingTime, image, tags, description, content } =
+    blog;
+
   return (
     <section id='blog' className='container py-6 flex gap-5 '>
       <div id='blog-layout' className='flex-3/4'>
         <nav className='mb-6'>
-          <a href='' className='underline'>
+          <a href='' className='underline decoration-dotted'>
             Home
           </a>
           <span> / </span>
-          <a href=''>Raspberry-pi-home-automation</a>
+          <a href=''>{slug}</a>
         </nav>
         <article>
           <div>
-            <h1 className='text-4xl mb-2 pr-30 tracking-wide object-fill'>
-              <a href='/pages/blog.html'>
-                Raspberry Pi Home Automation with Google Assistant
-                integration — Part 3 (Assistant integration)
-              </a>
+            <h1 className='font-heading text-4xl mb-2 pr-30 tracking-wide object-fill'>
+              <a href='/pages/blog.html'>{title}</a>
             </h1>
-            <div
-              class='blog-post__meta'
-              className='opacity-50 font-black mb-6 tracking-wider'
-            >
-              <time datetime='2018-11-03'>November 3, 2018</time>
+            <div className='blog-post__meta opacity-50 font-black mb-6 tracking-wider'>
+              <time dateTime='2018-11-03'>{date}</time>
               <span> • </span>
-              <span class='blog-post-reading__time'>6 min read</span>
+              <span className='blog-post-reading__time'>{readingTime}</span>
             </div>
           </div>
-
+          <h3 className='text-l mb-4'>{description}</h3>
           <figure>
             <img
-              src={image}
+              src='../sample-blog.png'
               alt='Raspberry Pi Home Automation'
               className='w-full h-500px'
             />
-            <figcaption className='opacity-50'>
-              Raspberry Pi based smart home setup
-            </figcaption>
+            <figcaption className='opacity-50'>{slug}</figcaption>
           </figure>
 
-          <div class='blog-post__description' className='my-7'>
-            <p>
-              So up till now you have been able to control the switches with the
-              React based frontend. Time to take things up a little notch. In
-              this part, we’ll be integrating Google Assistant with our
-              Raspberry Pi setup.
-            </p>
-            <h3>Prerequisites</h3>
-            <ul>
-              <li>Raspberry Pi with Raspbian OS</li>
-              <li>Node.js installed</li>
-              <li>Google Cloud account</li>
-            </ul>
-            <h3>Step 1: Google Assistant Setup</h3>
-            <p>
-              First, we need to create a project in Google Cloud and enable the
-              Google Assistant API.
-            </p>
-            <pre>
-              <code>npm install actions-on-google</code>
-            </pre>
-            <blockquote>
-              Voice control makes home automation truly powerful.
-            </blockquote>
-          </div>
+          <MarkdownRender>{content}</MarkdownRender>
 
-          <footer>
-            <div>
-              <span className='font-black mr-1.5'>Tags : </span>
-              <a href='/tags/raspberry-pi' className='underline mr-2'>
-                Raspberry Pi
-              </a>
-              <a href='/tags/iot' className='underline mr-2'>
-                IoT
-              </a>
-              <a href='/tags/google-assistant' className='underline mr-2'>
-                Google Assistant
-              </a>
-            </div>
+          <footer className='mt-5 px-4'>
+            <span className='font-black mr-1.5 '>Tags : </span>
+            {tags.map((tag) => {
+              return (
+                <span key={tag}>
+                  <a
+                    href='/tags/raspberry-pi'
+                    className='underline decoration-dotted mr-2 '
+                  >
+                    {tag}
+                  </a>
+                </span>
+              );
+            })}
+
             {/* Navigation  */}
             <nav className='flex justify-between mt-6'>
-              <a href='#' class='prev-post'>
+              <a href='#' className='prev-post'>
                 ← Previous Post
               </a>
-              <a href='#' class='next-post'>
+              <a href='#' className='next-post'>
                 Next Post →
               </a>
             </nav>
@@ -108,7 +86,7 @@ const BlogPost = () => {
           </ul>
         </section>
         {/* Related Posts  */}
-        <section class='blogs-aside__related'>
+        <section className='blogs-aside__related'>
           <h3 className='font-bold mt-2'>Related Posts</h3>
           <ul>
             <li>

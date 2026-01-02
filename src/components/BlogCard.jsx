@@ -1,6 +1,14 @@
 /** @format */
 
-const BlogCard = ({ title, description, date, readingTime, image, index }) => {
+const BlogCard = ({
+  title,
+  description,
+  date,
+  readingTime,
+  image,
+  id,
+  index,
+}) => {
   return (
     <article
       className='border border-[#E1B6B6] bg-[#D9D9D93a] my-4 flex'
@@ -15,7 +23,7 @@ const BlogCard = ({ title, description, date, readingTime, image, index }) => {
       </figure>
       <div className='p-2.5'>
         <h4 className='font-bold hover:underline tracking-wide'>
-          <a href='/pages/blog.html'>{title}</a>
+          <a href={`blog/${id}`}>{title}</a>
         </h4>
         <div className='blog__meta opacity-50'>
           <time dateTime='2018-11-03'>{date}</time>

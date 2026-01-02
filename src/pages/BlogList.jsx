@@ -20,8 +20,8 @@ const BlogList = () => {
           </a>
         </nav>
 
-        {blogs.map((blog, index) => {
-          const { title, description, date, readingTime, image } = blog;
+        {blogs.map((blog) => {
+          const { title, description, date, readingTime, image, slug } = blog;
           return (
             <BlogCard
               title={title}
@@ -29,7 +29,8 @@ const BlogList = () => {
               date={date}
               readingTime={readingTime}
               image={image}
-              index={index}
+              id={slug}
+              key={slug}
             />
           );
         })}

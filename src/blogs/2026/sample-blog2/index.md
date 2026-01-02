@@ -3,8 +3,8 @@ title: 'System Design: The complete course'
 slug: 'system-design-the-complete-course'
 description: 'Learn how to design systems at scale and prepare for system design interviews.'
 date: 'November 3, 2018'
-readingTime: '6 min read'
-image: 'src/blogs/2025/sample-blog/sample-blog.png'
+readingTime: '240 min read'
+image: 'src/blogs/2026/sample-blog2/sample-blog.png'
 tags: ['system-design', 'distributedsystems', 'architecture']
 ---
 
