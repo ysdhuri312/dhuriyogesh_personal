@@ -29,7 +29,7 @@ const Header = () => {
             <a href='/#projects'>Projects</a>
           </li>
           <li className='px-3 hover:bg-primary hover:text-amber-50 ease-in-out duration-300'>
-            <Link to='/blog'>Blogs</Link>
+            <Link to='/blogs'>Blogs</Link>
           </li>
           <li className='px-3 hover:bg-primary hover:text-amber-50 ease-in-out duration-300'>
             <Link to='/photos'>Photos</Link>

@@ -1,5 +1,7 @@
 /** @format */
 
+import { Link } from 'react-router';
+
 const BlogCard = ({
   title,
   description,
@@ -20,7 +22,7 @@ const BlogCard = ({
       </figure>
       <div className='p-2.5 w-139'>
         <h4 className='font-bold hover:underline tracking-wide'>
-          <a href={`blog/${slug}`}>{title}</a>
+          <Link to={`/blog/${slug}`}>{title}</Link>
         </h4>
         <div className='blog__meta opacity-50'>
           <time dateTime='2018-11-03'>{date}</time>

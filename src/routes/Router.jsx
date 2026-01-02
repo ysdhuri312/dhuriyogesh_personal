@@ -18,11 +18,11 @@ const router = createBrowserRouter([
         index: true,
       },
       {
-        path: '/blog',
+        path: '/blogs',
         element: <BlogList />,
       },
       {
-        path: '/blog/:id',
+        path: 'blog/:id',
         element: <BlogPost />,
       },
       {
