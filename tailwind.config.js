@@ -1,4 +1,5 @@
 /** @format */
+import typography from '@tailwindcss/typography';
 
 export default {
   theme: {
@@ -19,5 +20,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [typography],
 };
