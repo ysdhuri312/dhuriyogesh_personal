@@ -9,7 +9,7 @@ const BlogList = () => {
   return (
     <section id='blogs' className='container py-6 flex gap-5'>
       <div className='flex-3/4'>
-        <h1 className='font-black text-3xl'>Blogs</h1>
+        <h1 className='font-heading text-3xl'>Blogs</h1>
         <nav className='breadcrumb my-3.5'>
           <a href='' className='underline decoration-dotted'>
             Home
@@ -21,7 +21,8 @@ const BlogList = () => {
         </nav>
 
         {blogs.map((blog) => {
-          const { title, description, date, readingTime, image, slug } = blog;
+          const { title, description, date, readingTime, image, slug, tags } =
+            blog;
           return (
             <BlogCard
               title={title}
@@ -29,7 +30,8 @@ const BlogList = () => {
               date={date}
               readingTime={readingTime}
               image={image}
-              id={slug}
+              slug={slug}
+              tags={tags}
               key={slug}
             />
           );
@@ -37,17 +39,23 @@ const BlogList = () => {
 
         <nav>
           <ul className='flex justify-between'>
-            <li className='hover:underline hover:decoration-dotted'>
+            <li>
               <a href='' rel='prev' aria-label='Previous page'>
-                ← Previous
+                &larr;{' '}
+                <span className='hover:underline hover:decoration-dotted'>
+                  Previous
+                </span>
               </a>
             </li>
             <li className='pagination__item pagination_item--status'>
               <span aria-current='page'>1 of 6</span>
             </li>
-            <li className='hover:underline hover:decoration-dotted'>
+            <li>
               <a href='' rel='next' aria-label='Next page'>
-                Next →
+                <span className='hover:underline hover:decoration-dotted'>
+                  Next
+                </span>{' '}
+                &rarr;
               </a>
             </li>
           </ul>
