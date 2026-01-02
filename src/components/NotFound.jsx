@@ -7,7 +7,7 @@ const NotFound = () => {
         color: '#444',
         margin: 0,
         font: 'normal 14px/20px Arial, Helvetica, sans-serif',
-        height: '100%',
+        height: '100vh',
         backgroundColor: '#fff',
       }}
     >
