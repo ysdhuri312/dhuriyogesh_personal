@@ -62,7 +62,7 @@ const BlogPost = () => {
 
             {/* Navigation  */}
             <nav className='flex justify-between mt-6'>
-              <button className='text-start text-sm font-medium bg-primary px-2 py-1 text-amber-50 hover:bg-[#d94b2c]'>
+              <button className='text-start text-sm font-medium bg-primary px-2 py-1 leading-none text-amber-50 hover:bg-[#d94b2c]'>
                 <div>
                   Previous:
                   <div>
@@ -74,7 +74,7 @@ const BlogPost = () => {
                   </div>
                 </div>
               </button>
-              <button className='text-end text-sm font-medium bg-primary px-2 py-1 text-amber-50 hover:bg-[#d94b2c]'>
+              <button className='text-end text-sm font-medium bg-primary px-2 py-1 leading-none text-amber-50 hover:bg-[#d94b2c] cu'>
                 <div>
                   Next:
                   <div>
