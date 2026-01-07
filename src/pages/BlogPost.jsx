@@ -13,7 +13,10 @@ const BlogPost = () => {
   const { title, slug, date, readingTime, tags, description, content } = blog;
 
   return (
-    <section id='blog' className='container py-6 flex gap-5 '>
+    <section
+      id='blog'
+      className='container py-6 flex flex-col lg:flex-row gap-5 '
+    >
       <div id='blog-layout' className='flex-3/4'>
         <nav className='mb-6'>
           <a href='' className='underline decoration-dotted'>
@@ -91,7 +94,7 @@ const BlogPost = () => {
         </article>
       </div>
 
-      <aside className='flex-1/4 mt-21 text-[15px]'>
+      <aside className='flex-1/4 mt-1 lg:mt-21 text-[15px]'>
         {/* Table of Contents */}
         <section>
           <h3 className='font-bold'>On this page</h3>
