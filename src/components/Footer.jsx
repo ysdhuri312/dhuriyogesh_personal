@@ -7,7 +7,7 @@ import x from '../assets/icons/X.svg';
 const Footer = () => {
   return (
     <footer id='footer' className='h-2.5'>
-      <div className='px-25 py-1 bg-primary text-amber-50 flex justify-between items-center'>
+      <div className='px-2 sm:px-25 py-1 bg-primary text-amber-50 flex justify-between items-center'>
         <p className='copyright'>© 2026 Yogesh Dhuri. All rights reserved.</p>
         <div className='flex gap-3 my-2 bg-primary items-center'>
           <a href='http://www.linkedin.com/in/dhuriyogesh0312'>
