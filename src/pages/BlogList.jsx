@@ -1,13 +1,15 @@
 /** @format */
 import BlogCard from '../components/BlogCard';
 import { getAllBlogs } from '../blogs/blogService.js';
-import { useEffect, useState } from 'react';
 
 const BlogList = () => {
   const blogs = getAllBlogs();
 
   return (
-    <section id='blogs' className='container py-6 flex gap-5'>
+    <section
+      id='blogs'
+      className='container py-6 flex flex-col md:flex-row  gap-5'
+    >
       <div className='flex-3/4'>
         <h1 className='font-heading text-3xl'>Blogs</h1>
         <nav className='breadcrumb my-3.5'>
@@ -62,7 +64,7 @@ const BlogList = () => {
         </nav>
       </div>
 
-      <aside className='flex-1/4 mt-21 text-[15px]'>
+      <aside className='flex-1/4 mt-1 md:mt-21 text-[15px]'>
         {/* Table of Contents */}
         <section>
           <h3 className='font-bold'>On this page</h3>
