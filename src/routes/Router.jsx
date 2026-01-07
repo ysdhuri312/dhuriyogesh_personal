@@ -1,12 +1,14 @@
 /** @format */
 
 import { createBrowserRouter } from 'react-router';
+import { Suspense, lazy } from 'react';
 import Root from '../layouts/Root';
 import Landing from '../pages/Landing';
-import BlogList from '../pages/BlogList';
-import BlogPost from '../pages/BlogPost';
 import Photos from '../pages/Photos';
 import NotFound from '../components/NotFound';
+
+const BlogList = lazy(() => import('../pages/BlogList'));
+const BlogPost = lazy(() => import('../pages/BlogPost'));
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,11 @@ const router = createBrowserRouter([
       },
       {
         path: 'blog/:id',
-        element: <BlogPost />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <BlogPost />
+          </Suspense>
+        ),
       },
       {
         path: '/photos',

@@ -28,7 +28,7 @@ const BlogPost = () => {
         <article>
           <div>
             <h1 className='font-heading text-4xl mb-2 pr-30 tracking-wide object-fill'>
-              <a href='/pages/blog.html'>{title}</a>
+              {title}
             </h1>
             <div className='blog-post__meta opacity-50 font-black mb-6 tracking-wider'>
               <time dateTime='2018-11-03'>{date}</time>
