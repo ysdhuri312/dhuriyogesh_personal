@@ -6,6 +6,7 @@ import Root from '../layouts/Root';
 import Landing from '../pages/Landing';
 import Photos from '../pages/Photos';
 import NotFound from '../components/NotFound';
+import Loading from '../components/Loading';
 
 const BlogList = lazy(() => import('../pages/BlogList'));
 const BlogPost = lazy(() => import('../pages/BlogPost'));
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       {
         path: 'blog/:id',
         element: (
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <BlogPost />
           </Suspense>
         ),
