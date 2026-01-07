@@ -24,6 +24,7 @@
     --color-text-primary: #171717;
     --color-white-900: #fff2f2;
     --color-primary: #EB6440;
+    --breakpoint-xs: 360px;
     --font-body: 'Open Sans';
     --font-heading: 'Opan Sans ExtraBold';
     --font-logo: 'Waltograph';
@@ -73,14 +74,13 @@
     }
 
     .container {
-        @apply container mx-auto px-25
+        @apply container lg:px-25 md:mx-auto md:px-15 sm:px-10 xs:px-5;
     }
 
 }
 
 .container {
     max-width: 1440px;
-    margin-inline: auto
 }
 
 #app {

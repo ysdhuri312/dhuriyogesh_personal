@@ -18,6 +18,9 @@ export default {
           primary: '#EB6440',
         },
       },
+      screens: {
+        xs: '360px',
+      },
     },
   },
   plugins: [typography],

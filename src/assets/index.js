@@ -31,6 +31,9 @@ import yelpCamp from '../assets/thumbnails/yelp-camp.png';
 
 import resume from '../assets/pdf/Resume_Yogesh_Dhuri.pdf';
 
+import hamburger from '../assets/icons/hamburger-menu.png';
+import close from '../assets/icons/close.png';
+
 export {
   bootstrap,
   cpp,
@@ -60,4 +63,6 @@ export {
   resume,
   portfolio,
   yelpCamp,
+  hamburger,
+  close,
 };
