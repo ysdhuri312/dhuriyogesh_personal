@@ -11,7 +11,7 @@ const Header = () => {
     <header className='container py-2.5 flex justify-between items-center sticky top-0 z-10 border-b border-[rgba(0,0,0,0.1)] backdrop-blur-3xl shadow-lg'>
       <h1>
         <a
-          href='#home'
+          href='/#home'
           className='lg:text-2xl font-black font-logo lg:tracking-wider'
         >
           &#60; Yogesh.Dev <span className='text-2xl text-primary'>&#47; </span>

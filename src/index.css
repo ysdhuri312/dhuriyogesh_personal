@@ -3,13 +3,13 @@
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(./assets/fonts/OpenSans.ttf) format('truetype');
+    src: url(./assets/fonts/OpenSans.woff2) format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Opan Sans ExtraBold';
-    src: url(./assets/fonts/OpenSans_ExtraBold.ttf) format('truetype');
+    src: url(./assets/fonts/OpenSans_ExtraBold.woff2) format('woff2');
     font-display: swap;
 }
 

@@ -3,7 +3,8 @@
 import { Link, useParams } from 'react-router';
 import { getAllBlogs } from '../blogs/blogService.js';
 import MarkdownRender from '../blogs/MarkdownRender.jsx';
-import { getPrevNext } from '../utils/index.js';
+import { getPrevNext } from '../utils/getPrevNext.js';
+import { useMetadata } from '../utils/hooks/useMetadata.js';
 
 const BlogPost = () => {
   const blogs = getAllBlogs();
@@ -12,6 +13,11 @@ const BlogPost = () => {
   const { prev, next } = getPrevNext(blogs, blog);
   const { title, slug, date, readingTime, tags, description, content } = blog;
 
+  useMetadata({
+    title: blog.title,
+    description: blog.description,
+  });
+
   return (
     <section
       id='blog'
@@ -19,11 +25,11 @@ const BlogPost = () => {
     >
       <div id='blog-layout' className='flex-3/4'>
         <nav className='mb-6'>
-          <a href='' className='underline decoration-dotted'>
+          <Link to='/blogs' className='underline decoration-dotted'>
             Home
-          </a>
+          </Link>
           <span> / </span>
-          <a href=''>{slug}</a>
+          <p className='inline-block'>{slug}</p>
         </nav>
         <article>
           <div>

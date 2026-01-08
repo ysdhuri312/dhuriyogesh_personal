@@ -1,9 +1,16 @@
 /** @format */
 import BlogCard from '../components/BlogCard';
 import { getAllBlogs } from '../blogs/blogService.js';
+import { useMetadata } from '../utils/hooks/useMetadata.js';
 
 const BlogList = () => {
   const blogs = getAllBlogs();
+
+  useMetadata({
+    title: 'Blogs | Explore the latest personal blog posts',
+    description:
+      'Explore the latest personal blog posts and discover practical tips on tech, and travel. Find valuable insights and start reading today',
+  });
 
   return (
     <section

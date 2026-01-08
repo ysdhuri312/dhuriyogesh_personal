@@ -6,7 +6,11 @@ import Skills from '../sections/Skills';
 import Project from '../sections/Project';
 import Contact from '../sections/Contact';
 
+import { useMetadata } from '../utils/hooks/useMetadata';
+
 const Landing = () => {
+  useMetadata({});
+
   return (
     <>
       <Home />

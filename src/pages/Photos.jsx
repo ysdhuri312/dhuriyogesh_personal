@@ -1,8 +1,14 @@
 /** @format */
 
 import UnderConstruction from '../assets/icons/under-construction.gif';
+import { useMetadata } from '../utils/hooks/useMetadata';
 
 const Photos = () => {
+  useMetadata({
+    title: 'Photos | Collection of personal photographs',
+    description:
+      'Collection of personal photographs, from everyday moments to artistic shots. Discover unique perspectives & memories. Browse Photos',
+  });
   return (
     <section
       style={{
