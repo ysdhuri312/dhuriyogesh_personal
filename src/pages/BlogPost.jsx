@@ -102,9 +102,9 @@ const BlogPost = () => {
             <Giscus
               id='comments'
               repo='ysdhuri312/portfolio-react-app'
-              repoId='R_kgDOQrgOwQ'
+              repoId={`${import.meta.env.VITE_GISCUS_REPO_ID}`}
               category='General'
-              categoryId='DIC_kwDOQrgOwc4C0v4C'
+              categoryId={`${import.meta.env.VITE_GISCUS_CATEGORY_ID}`}
               mapping='pathname'
               term='Welcome to @giscus/react component!'
               reactionsEnabled='1'

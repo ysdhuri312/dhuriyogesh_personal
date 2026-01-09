@@ -8,8 +8,7 @@ const Contact = () => {
     event.preventDefault();
     setResult('Sending....');
     const formData = new FormData(event.target);
-    formData.append('access_key', 'cb2bd1ab-4a2a-4b30-ad1f-d1da81802f89');
-    console.log(formData);
+    formData.append('access_key', import.meta.env.VITE_WEB3FORMS_SECRET_KEY);
 
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
