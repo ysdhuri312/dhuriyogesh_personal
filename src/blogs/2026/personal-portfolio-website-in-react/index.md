@@ -4,7 +4,7 @@ slug: 'personal-portfolio-website-in-react'
 description: 'The blog explain why we use tech stack on my project, How I structured my file in folder and what complication faces at time i build project'
 date: 'January 11, 2026'
 readingTime: '4 min read'
-image: '/blogs/2025/personal-portfolio-website-in-react/cover.png'
+image: '/blogs/2026/personal-portfolio-website-in-react/cover.png'
 tags: ['react-js', 'personal-website', 'ui']
 ---
 
