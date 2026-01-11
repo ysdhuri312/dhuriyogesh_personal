@@ -1,7 +1,7 @@
 ---
 title: 'Personal Portfolio Website in React JS'
 slug: 'personal-portfolio-website-in-react'
-description: 'The blog explain why we use tech stack on my project, How I structured my file in folder and what complication faces at time i build project'
+description: 'A personal portfolio and developer journal documenting real-world development decisions, challenges, and solutions. It serves as both a reference for my future self and a place to share practical development experiences with others. This website is built as a living project, evolving over time as I learn, experiment, and improve my approach to building web applications. '
 date: 'January 11, 2026'
 readingTime: '4 min read'
 image: '/blogs/2026/personal-portfolio-website-in-react/cover.png'
@@ -14,27 +14,28 @@ tags: ['react-js', 'personal-website', 'ui']
 
 ### My Approach
 
-✅ Markdown-based blog (stored locally in repo) <br>
-✅ Static content, dynamic UI <br>
-✅ SEO-friendly structure <br>
-✅ Easy to scale later (CMS / API if needed) <br>
+✅ Markdown-based blog (stored locally in repo)
+✅ Static content, dynamic UI
+✅ SEO-friendly structure
+✅ Easy to scale later (CMS / API if needed)
 ✅ Figma for UI design
 
 ### Tech Stack
 
-✅ React (UI) <br>
-✅ Vite (fast build & dev) <br>
-✅ React Router (routing) <br>
-✅ Markdown files (.md) for blog posts <br>
-✅ gray-matter (frontmatter metadata) <br>
-✅ remark / react-markdown (render markdown) <br>
-✅ Giscus for comments or discussion <br>
+✅ React (UI)
+✅ Vite (fast build & dev)
+✅ React Router (routing)
+✅ Markdown files (.md) for blog posts
+✅ gray-matter (frontmatter metadata)
+✅ remark / react-markdown (render markdown)
+✅ Giscus for comments or discussion
 ✅ Tailwind
 ✅ Figma
 
 ### Folder Structure
 
 <pre>
+
 └── src/
     ├── assets/
     │   ├── font/
@@ -79,6 +80,7 @@ tags: ['react-js', 'personal-website', 'ui']
     ├── App.jsx
     ├── main.jsx
     └── index.css
+    
  </pre>
 
 ### Why I chose React + Vite for my portfolio
@@ -101,16 +103,15 @@ tags: ['react-js', 'personal-website', 'ui']
 
 ### Markdown Blog Format
 
-## <pre>
+<pre>
 
+---
 title: "Designing a Minimal Portfolio"
 date: "2025-01-05"
 description: "How I designed my personal portfolio"
 tags: ["ui", "portfolio", "design"]
 cover: "/images/portfolio-cover.png"
-
 ---
-
 ## Introduction
 
 This is my design process...
@@ -121,7 +122,7 @@ I used neutral colors because...
 
 </pre>
 
-### Why i choose in Repo database.
+### Why i choose in Repo database
 
 - It is great for personal/small blogs: versioning, easy CI/CD, cheap, simple. Best for mostly text content and small images.
 - No backend or database to manage.
