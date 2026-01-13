@@ -21,3 +21,5 @@ Disallow:
 # 4. BLOCK EVERYTHING ELSE (The rest of the world)
 User-agent: *
 Disallow: /
+
+https://dhuriyogesh.vercel.app/sitemap.xml
