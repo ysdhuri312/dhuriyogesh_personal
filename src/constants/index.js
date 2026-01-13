@@ -134,7 +134,7 @@ const projects = [
     live_app_link: 'https://yelp-camp-i3wi.onrender.com/',
   },
   {
-    name: 'Personal and Blogging website',
+    name: 'Portfolio and Blogging website',
     description:
       'My personal portfolio and blogging website, built with React, React Markdown and styled using Tailwind CSS to showcase my projects and skills',
     tags: [

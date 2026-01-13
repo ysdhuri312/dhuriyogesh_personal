@@ -110,11 +110,11 @@ const Contact = () => {
             </strong>
             <br />
             <a
-              href='https://ysdhuri312.github.io/dhuriyogesh.github.io/'
+              href='https://dhuriyogesh.vercel.app/'
               target='_blank'
               className='bg-primary'
             >
-              https://ysdhuri312.github.io/
+              https://dhuriyogesh.vercel.app/
             </a>
           </div>
           <div className='placeholder'></div>
