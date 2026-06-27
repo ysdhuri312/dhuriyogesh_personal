@@ -19,6 +19,7 @@ import {
   figma,
   portfolio,
   yelpCamp,
+  edemy,
 } from '../assets';
 
 const technologies = [
@@ -134,26 +135,27 @@ const projects = [
     live_app_link: 'https://yelp-camp-i3wi.onrender.com/',
   },
   {
-    name: 'Portfolio and Blogging website',
+    name: 'Learning Management System (Edemy)',
     description:
-      'My personal portfolio and blogging website, built with React, React Markdown and styled using Tailwind CSS to showcase my projects and skills',
+      'Developed a full-stack Learning Management System featuring secure authentication, course browsing, enrollment, and lecture access using React, Node.js, Express.js, and MongoDB. Integrated Clerk for authentication and user management, Stripe for secure payment processing, and Cloudinary for media storage and delivery.',
     tags: [
       {
         name: 'react-js',
         color: 'blue-text-gradient',
       },
       {
-        name: 'tailwind-css',
+        name: 'node-js',
         color: 'green-text-gradient',
       },
       {
-        name: 'react-markdown',
+        name: 'REST-api',
         color: 'pink-text-gradient',
       },
     ],
-    image: portfolio,
-    source_code_link: 'https://github.com/ysdhuri312/dhuriyogesh_personal.git',
-    live_app_link: 'https://dhuriyogesh.vercel.app/',
+    image: edemy,
+    source_code_link:
+      'https://github.com/ysdhuri312/learning-management-system-v1.git',
+    live_app_link: 'https://lms-frontend-nine-psi.vercel.app/',
   },
 ];
 

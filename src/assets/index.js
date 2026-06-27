@@ -21,6 +21,7 @@ import aboutHero from '../assets/img/hero-2.png';
 
 import portfolio from '../assets/thumbnails/portfolio.png';
 import yelpCamp from '../assets/thumbnails/yelp-camp.png';
+import edemy from '../assets/thumbnails/edemy-lms.png';
 
 import resume from '../assets/pdf/Resume_Yogesh_Dhuri.pdf';
 
@@ -49,6 +50,7 @@ export {
   resume,
   portfolio,
   yelpCamp,
+  edemy,
   hamburger,
   close,
 };
